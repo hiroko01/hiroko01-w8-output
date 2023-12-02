@@ -3,7 +3,7 @@
   }
 
 body {
-    background-color: #ccc;
+    background-color: #e5e4e6;
     color: #3f312b;
     font-family: 'Josefin Sans', sans-serif;
     /* font-family: 'Zen Kaku Gothic New', sans-serif; */
@@ -44,7 +44,7 @@ ul li {
 .grid > li {
     min-height: 70px;
     background-color: #fff;
-    border:solid #ccc 5px;
+    border:solid #e5e4e6 5px;
 }
 
 .grid-col-4 > li {
