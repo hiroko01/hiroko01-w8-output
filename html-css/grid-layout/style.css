@@ -5,6 +5,8 @@
 body {
     background-color: #ccc;
     color: #3f312b;
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Zen Kaku Gothic New', sans-serif; */
     /* background: repeating-linear-gradient(#f4fefe, #f4fefe 20px, #a3eefa 1px, #a3eefa 21px); */
 }
 
@@ -19,6 +21,7 @@ h1 {
 h3 {
     margin-left: 10px;
     margin-bottom: 0;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
 ul {
@@ -55,3 +58,4 @@ ul li {
 .grid-col-6 > li {
     width: calc(100% / 6);
 }
+
