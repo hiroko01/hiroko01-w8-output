@@ -23,7 +23,9 @@ a:hover{
     color: #8a2be2;
 }
 
-
+h2 {
+    margin: 0;
+}
 
 .parent-container {
     width: 500px;
@@ -39,7 +41,8 @@ a:hover{
 .child-box {
     width: 90%;
     max-width: 400px; /* 適切な最大幅を設定 */
-    padding: 20px;
+    padding: 20px 0;
+    margin: 0;
 }
 
 
@@ -55,7 +58,9 @@ a:hover{
     width: 100%;
     margin-bottom: 20px; /* 必要に応じて余白を設定 */
 }
-
+.form-table,
+.form-table tbody,
+.form-table tr,
 .form-table th,
 .form-table td {
     display: block;
@@ -65,16 +70,34 @@ a:hover{
     padding: 0;
 }
 
+
+
+
+
+/* .form-table th,
+.form-table td {
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+} */
+
+.form-table th{
+    margin-top: 10px;
+}
+
+
 .form-button {
     margin-top: 30px;
-    width: 100%;
+   
     /* text-align: center; */
 }
 
 .input {
-    width: 100%;
+    min-width: 400px;
     border-radius: 5px;
-    padding: 12px;
+    padding: 12px 0;
     border: none;
 }
 
@@ -91,6 +114,7 @@ a:hover{
     padding: 10px 50px;
     text-decoration: none;
     border-radius: 5px;
+    width: 400px;
 }
 .button:hover {
     color: #666;
