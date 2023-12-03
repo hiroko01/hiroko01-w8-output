@@ -2,16 +2,12 @@
 
 /*
 Base style
-
-font-family: 'M PLUS Rounded 1c', sans-serif;
-font-family: 'Varela Round', sans-serif;
-font-family: 'Zen Maru Gothic', serif;
 */
 body {
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
     line-height: 1.5;
-    color: #333;
+    color: #666;
 }
 label, input, textarea, select, button {
     cursor: pointer;
@@ -19,41 +15,88 @@ label, input, textarea, select, button {
 button {
     border: 0;
 }
-
-
-
-
-body {
-    background: #eee;
+a{
+    font-weight: bold;
+    color: #df7163;
+}
+a:hover{
+    color: #8a2be2;
 }
 
-.container {
-    display: flex;
-    
-  }
-.box {
-    display: flex;
-} 
 
-.item {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    /* padding: 10px; */
-    background-color: aqua;
+
+.parent-container {
+    width: 500px;
+    margin: 30px auto;
+    padding: 0;
+    background-color: #ccc;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.test-01 {
-    display: flex;
-    flex-direction: column;
-    margin: 30px ;
+.child-box {
+    width: 90%;
+    max-width: 400px; /* 適切な最大幅を設定 */
+    padding: 20px;
 }
 
-.container-2 {
-    display: flex;
-    margin: 30px;
+
+/* form */
+
+/* .form-table {
+    margin: 0;
+    padding: 0;
+} */
+.form-table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 20px; /* 必要に応じて余白を設定 */
 }
 
-@media screen  {
-    
+.form-table th,
+.form-table td {
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.form-button {
+    margin-top: 30px;
+    width: 100%;
+    /* text-align: center; */
+}
+
+.input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 12px;
+    border: none;
+}
+
+
+
+
+/* button */
+.button {
+    /* display: inline-block; */
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: #666;
+    /* text-align: center; */
+    padding: 10px 50px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.button:hover {
+    color: #666;
+    background-color: #fef263;
+}
+
+.sign-up {
+    padding: 30px 0 0;
 }
