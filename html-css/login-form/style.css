@@ -20,6 +20,8 @@ a{
     color: #df7163;
 }
 a:hover{
+    /* text-shadow: #df7163 1px -1px 20px;
+    color: #ec6d71; */
     color: #8a2be2;
 }
 
