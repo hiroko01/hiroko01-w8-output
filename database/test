@@ -1,1 +1,0 @@
-2/4 HTML/CSSのログインフォームを拡張し、一度Sign Inのボタンが押されたら次回以降、emailとpasswordが自動入力される機能をlocalStorageを用いて実装してください。
