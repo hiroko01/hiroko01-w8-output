@@ -1,34 +1,128 @@
+@charset "utf-8";
+
+/*
+Base style
+*/
 body {
-    background: #eee;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666;
+}
+label, input, textarea, select, button {
+    cursor: pointer;
+}
+button {
+    border: 0;
+}
+a{
+    font-weight: bold;
+    color: #df7163;
+}
+a:hover{
+    /* text-shadow: #df7163 1px -1px 20px;
+    color: #ec6d71; */
+    color: #8a2be2;
 }
 
-.container {
-    display: flex;
-    
-  }
-.box {
-    display: flex;
-} 
-
-.item {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    /* padding: 10px; */
-    background-color: aqua;
+h2 {
+    margin: 0;
 }
 
-.test-01 {
+.parent-container {
+    width: 500px;
+    margin: 30px auto;
+    padding: 0;
+    background-color: #ccc;
+    border-radius: 15px;
     display: flex;
-    flex-direction: column;
-    margin: 30px ;
+    justify-content: center;
+    align-items: center;
 }
 
-.container-2 {
-    display: flex;
-    margin: 30px;
+.child-box {
+    width: 90%;
+    max-width: 400px; /* 適切な最大幅を設定 */
+    padding: 20px 0;
+    margin: 0;
 }
 
-@media screen  {
-    
+
+/* form */
+
+/* .form-table {
+    margin: 0;
+    padding: 0;
+} */
+.form-table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 20px; /* 必要に応じて余白を設定 */
+}
+.form-table,
+.form-table tbody,
+.form-table tr,
+.form-table th,
+.form-table td {
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* .form-table th,
+.form-table td {
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+} */
+
+.form-table th{
+    margin-top: 10px;
+}
+
+
+.form-button {
+    margin-top: 30px;
+   
+    /* text-align: center; */
+}
+
+.input {
+    min-width: 400px;
+    border-radius: 5px;
+    padding: 12px 0;
+    border: none;
+}
+
+
+
+
+/* button */
+.button {
+    /* display: inline-block; */
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: #666;
+    /* text-align: center; */
+    padding: 10px 50px;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 400px;
+}
+.button:hover {
+    color: #666;
+    background-color: #fef263;
+}
+
+.sign-up {
+    padding: 30px 0 0;
 }
