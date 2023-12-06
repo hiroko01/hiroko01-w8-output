@@ -16,13 +16,11 @@
     <div class="parent-container">
         <div class="child-box">
                 <h2>Sign in to your account</h2>
-                    <form action="">
+                    <form id="js-loginForm" action="">
                         <table class="form-table">
                             <tr>
                                 <th>
-                                    <label for="email">
-                                        Your email
-                                    </label>
+                                    <label for="email">Your email</label>
                                 </th>
                                 <td>
                                     <input id="js-email" class="input" type="email">
@@ -30,18 +28,15 @@
                             </tr>
                             <tr>
                                 <th>
-                                    <label for="password">
-                                        Password
-                                    </label>
+                                    <label for="password">Password</label>
                                 </th>
                                 <td>
-                                    <input id="js-password" class="input" type="password">
+                                    <input id="js-password" class="input" type="password" required>
                                 </td>
-
                             </tr>
                         </table>
             <div class="form-button">
-                <button class="button" type="submit">Submit</button>
+                <button class="button" type="submit" onclick="signIn()">Submit</button>
             </div>
             <div class="sign-up">
             Don't have an account yet? &#x279C; <a href="#">Sign Up</a>
