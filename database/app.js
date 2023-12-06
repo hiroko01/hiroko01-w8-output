@@ -1,3 +1,32 @@
+(()=>{
+document.addEventListener("DOMContentLoaded", function () {
+    // emailとpasswordがlocalStorageに保存されていれば、入力フィールドに自動入力
+    const storedEmail = localStorage.getItem("storedEmail");
+    const storedPassword = localStorage.getItem("storedPassword");
+
+    if (storedEmail && storedPassword) {
+        // emailとpasswordを入力フィールドに自動的に設定
+        document.getElementById("js-email").value = storedEmail;
+        document.getElementById("js-password").value = storedPassword;
+    }
+});
+
+function signIn() {
+    // 入力フィールドからemailとpasswordを取得
+    const email = document.getElementById("js-email").value;
+    const password = document.getElementById("js-password").value;
+
+    // emailとpasswordをlocalStorageに保存
+    localStorage.setItem("storedEmail", js-email);
+    localStorage.setItem("storedPassword", js-password);
+
+
+}
+})();
+
+
+
+
 // HTML/CSSのログインフォームを拡張し、
 // 一度Sign Inのボタンが押されたら次回以降、
 // emailとpasswordが自動入力される機能をlocalStorageを用いて実装してください。
@@ -6,7 +35,7 @@
 //コードを書く前に、まずは設計図を書く
 //ユーザーに、入力してもらう（アクション）
 //保存
-//取り出す　localStorage.getItem　
+//取り出す　localStorage.getItem
 //値を入れる
 //js-email　の中のテキストを　localStorageVal　にしろ　という命令
 
@@ -53,31 +82,3 @@
   
 //     alert('Logged In!');
 //   }
-
-
-
-(()=>{
-document.addEventListener("DOMContentLoaded", function () {
-    // emailとpasswordがlocalStorageに保存されていれば、入力フィールドに自動入力
-    const storedEmail = localStorage.getItem("storedEmail");
-    const storedPassword = localStorage.getItem("storedPassword");
-
-    if (storedEmail && storedPassword) {
-        // emailとpasswordを入力フィールドに自動的に設定
-        document.getElementById("js-email").value = storedEmail;
-        document.getElementById("js-password").value = storedPassword;
-    }
-});
-
-function signIn() {
-    // 入力フィールドからemailとpasswordを取得
-    const email = document.getElementById("js-email").value;
-    const password = document.getElementById("js-password").value;
-
-    // emailとpasswordをlocalStorageに保存
-    localStorage.setItem("storedEmail", js-email);
-    localStorage.setItem("storedPassword", js-password);
-
-
-}
-})();
